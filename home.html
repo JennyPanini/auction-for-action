@@ -7,38 +7,53 @@
     <title>Auction for Action</title>
 
     <link href="Style.css" type="text/css" rel="stylesheet"/>
+    <script src='js.js'></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jaro:opsz@6..72&family=Jersey+20+Charted&family=Meie+Script&family=Nanum+Gothic+Coding&family=Rock+Salt&family=Rubik+Bubbles&display=swap');
         </style>
 
 <header>
-    <nav class="menu" role="navigation">
-        <div class="menuToggle">
-            <input type="checkbox"/>
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="menuItem">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Archive</a></li>
-            <li><a href="#">Bets</a></li>
-            <li><a href="#">Merch</a></li>
-            </ul>
-        </div>
-    </nav>
+  
 </header>
+</head>
 
-<main class="logo">
+<body>
+<div id="overlay">
     <h1>Auction for Action</h1>
-</main>
+    <ul>
+        <li><a href="#intro-div" onclick="navigation()">Home</a></li>
+        <li><a href="#about-div" onclick="navigation()">About</a></li>
+        <li><a href="#services-div" onclick="navigation()">Services</a></li>
+        <li><a href="#careers-div" onclick="navigation()">Careers</a></li>
+        <li><a href="#contact-div" onclick="navigation()">Contact</a></li>
+    </ul>
+</div>
 
- </head>
+<div class="navbar">
+    <h1>Auction for Action</h1>
+    <ul>
+        <li><a href="#intro-div">Home</a></li>
+        <li><a href="#about-div">About</a></li>
+        <li><a href="#services-div">Services</a></li>
+        <li><a href="#careers-div">Careers</a></li>
+        <li><a href="#contact-div">Contact</a></li>
+    </ul>
 
+    <div id="toggler" onclick="mobilenav()">
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+</div>
 
- <body>
-    
+<!-- Separate pages for sections -->
+<div id="intro-div"><h2>HOME</h2></div>
+<div id="about-div"><h2>ABOUT</h2></div>
+<div id="services-div"><h2>SERVICES</h2></div>
+<div id="careers-div"><h2>CAREERS</h2></div>
+<div id="contact-div"><h2>CONTACT</h2></div>
+
+<p class="disclaimer">Designed & Created by Jennifer Chung</p>
 
  </body>
 
